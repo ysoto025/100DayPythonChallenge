@@ -97,30 +97,50 @@ import math
 #print("Your final bill is: $" + str(bill) + ".")
 
 # 🚨 Don't change the code below 👇
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
+#print("Welcome to the Love Calculator!")
+#name1 = input("What is your name? \n")
+#name2 = input("What is their name? \n")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
 
-full_name = (name1 + name2).lower()
-true_score = 0
-love_score = 0
-love = "love"
-true = "true"
+#full_name = (name1 + name2).lower()
+#true_score = 0
+#love_score = 0
+#3love = "love"
+#3true = "true"
 
-for x in true:
-    true_score = true_score + full_name.count(x)
+#for x in true:
+#    true_score = true_score + full_name.count(x)
     
-for x in love:
-    love_score = love_score + full_name.count(x)
+#for x in love:
+#    love_score = love_score + full_name.count(x)
 
-love_count = str(true_score)+ str(love_score)
+#love_count = str(true_score)+ str(love_score)
 
-if int(love_count) <10 or int(love_count)> 90:
-    print("Your score is " + love_count + ", you go together like coke and mentos.")
-elif 40 < int(love_count) < 50:
-    print("Your score is " + love_count + ", you alright together.")
+#if int(love_count) <10 or int(love_count)> 90:
+#    print("Your score is " + love_count + ", you go together like coke and mentos.")
+#elif 40 < int(love_count) < 50:
+#    print("Your score is " + love_count + ", you alright together.")
+#else:
+#   print("Your score is " + love_count + ".")
+
+#Project Day 3
+
+print("Welcome to Treasure Island, your mission is to find the treasure")
+response = input("You are at crossroad, which way are you gonna get, left or right?")
+if response == "left":
+    print("GAME OVER")
 else:
-   print("Your score is " + love_count + ".")
+    response = input("You came accros a lake. You see a ferry on the distance. Will you wait for the ferry or \"swim\" through the lake?")
+    if response == "swim":
+        print("GAME OVER")
+    else:
+        response = input("Once you crossed the lake You arrived to a castle with three doors, a yellow to the left, blue on the center and red on the right. One of those doors will lead you to the final treasure. Which one would you choose")
+        if response == "red":
+            print("You win")
+        else:
+            print("GAME OVER")
+           
+
+
